@@ -1,5 +1,5 @@
 import "./Style/style.scss";
-
+import {toggle_theme} from './dark-mode'
 // import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.js'
 
 const sections: NodeListOf<Element> =
@@ -32,8 +32,14 @@ const pageTransition = (): void => {
       }
     });
   });
-};
+  
+  
+}
 
 pageTransition();
+toggle_theme();
 
-export { };
+
+  export {
+
+  };

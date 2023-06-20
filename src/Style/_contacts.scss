@@ -1,0 +1,113 @@
+// contacts Styling 
+
+
+.contact-content-container{
+    display: flex;
+    padding-top: 3.5rem;
+    .left-contact{
+        flex:2;
+        h4{
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+            
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 2rem;
+        }
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    margin: .3rem 0 !important;
+                    padding: 0 !important;
+
+                }
+                .gicon{
+                    display: grid;
+                    grid-template-columns: 40px 1fr;
+                    .material-symbols-outlined{
+                        font-size: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            
+        }
+        .contact-icon{
+            display: flex;
+            margin-top: 2rem;
+            
+            a {
+                display: flex;
+                justify-content: center ;
+                color: var(--color-white);
+                background-color: var(--color-grey-5);
+                cursor: pointer;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    background-color: var(--color-secondary);
+                    transform: scale(1.1);
+                    svg{
+                        color: var(--color-primary);
+                        transform: scale(1.3);
+                    }
+                }
+                svg{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: scale(1.2);
+                }
+
+            }
+
+            
+        }
+
+    }
+
+    // Right Side
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-ctrl{
+            margin: 1.5rem 0;
+            input ,textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                background-color: var(--color-grey-5);
+                outline: none;
+                border: none;
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+
+            }
+        }
+        .input-ctrl-2{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
+        .submit-btn{
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+    }
+
+}
