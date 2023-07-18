@@ -2,10 +2,12 @@
 
 
 .contact-content-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding-top: 3.5rem;
+
     .left-contact{
-        flex:2;
+        
         h4{
             margin-top: 1rem;
             font-size: 2rem;
@@ -19,7 +21,6 @@
         .contact-info{
             .contact-item{
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
                 p{
                     margin: .3rem 0 !important;

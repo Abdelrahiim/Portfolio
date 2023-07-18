@@ -1,190 +1,206 @@
-@media screen and (max-width:1024px) {
-    header {
-        padding: 0;
+@media screen and (max-width: 1024px) {
+    body{
+        font-size: 1rem;
+    }
+  header {
+    padding: 0;
+  }
+  
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+
+    .right-header {
+      grid-row: 2;
+      padding: 2rem !important;
+      width: 90%;
+      margin: 0 auto;
+
+      .name {
+        font-size: 2.5rem !important;
+        text-align: center;
+        padding-top: 3rem;
+      }
     }
 
-    .theme-btn {
-        width: 50px;
-        height: 50px;
+    .left-header {
+      grid-row: 1;
+
+      .image {
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      .h-shape {
+        display: none;
+      }
+    }
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    .control {
+      margin: 1rem 0.3rem;
+    }
+  }
+
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+
+    .right-about {
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 2.5rem;
     }
 
-    .header-content {
+    .left-about {
+      padding-right: 0;
+
+      p {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .section {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .about-stats {
+    .progress-bars {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .time-line {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6rem;
+  }
+  .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 6rem;
+    margin-top: 1rem;
+  }
+  .contact-content-container {
+    grid-template-columns: repeat(1, 1fr);
+
+    .right-contact {
+      margin-left: 0;
+      margin-top: 2.5rem;
+      margin-bottom: 6rem;
+      .input-ctrl-2 {
+        flex-direction: column;
+        & :last-child {
+          margin-left: 0;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+  .header {
+    overflow-y: scroll;
+  }
+  .contact-item {
+    flex-direction: row;
+    margin: 1rem 0;
+    p {
+      font-size: 15px;
+      color: var(--color-grey-2);
+    }
+    span {
+      font-size: 15px;
+    }
+    // .icon{
+    //     grid-template-columns: 25px 1fr;
+    // }
+  }
+
+  .main-title {
+    h1 {
+      font-size: 3rem;
+      .bg-text {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 660px) {
+    body{
+        font-size: .9rem;
+    }
+  .blogs-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-title {
+    h1 {
+      font-size: 2rem;
+      .bg-text {
+        font-size: 3rem;
+      }
+    }
+  }
+  .about-container {
+    .left-about {
+      padding-right: 0;
+      padding-left: 0;
+      h4 {
+        font-size: 1.4rem;
+      }
+      p {
+        line-height: 1.4rem;
+      }
+    }
+    .right-about {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
-
-        .right-header {
-            grid-row: 2;
-            padding: 2rem !important;
-            width: 90%;
-            margin: 0 auto;
-
-            .name {
-                font-size: 2.5rem !important;
-                text-align: center;
-                padding-top: 3rem;
-            }
-        }
-
-        .left-header {
-            grid-row: 1;
-
-            .image {
-                margin: 0 auto;
-                width: 90%;
-            }
-
-            .h-shape {
-                display: none;
-            }
-        }
-    }
-
-    .controls {
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
+      }
+  }
+  .contact-content-container {
+    .right-contact {
+      .submit-btn {
         justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-
-        .control {
-            margin: 1rem .3rem;
-        }
+      }
     }
+  }
+  .contact-icon {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-    .about-container {
-        grid-template-columns: repeat(1, 1fr);
-
-        .right-about {
-            grid-template-columns: repeat(1, 1fr);
-            padding-top: 2.5rem;
-        }
-
-        .left-about {
-            padding-right: 0;
-
-            p {
-                padding-left: 0;
-            }
-
-        }
-    }
-
-    .section {
-        padding: 2rem 2.5rem !important;
-    }
-
+@media screen and (max-width: 375px){
     .about-stats {
         .progress-bars {
-            grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    .main-btn{
+        .btn-text {
+            padding: 0 1rem;
         }
     }
-
-    .time-line {
-        grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
-    }
-    .blogs-grid{
-        grid-template-columns: repeat(2, 1fr) ;
-        padding-bottom: 6rem;
-    }
-    .portfolios{
-        grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 6rem;
-        margin-top: 1rem;
-    }
-    .contact-content-container{
-        flex-direction: column;
-        
-        .right-contact{
-            margin-left: 0;
-            margin-top: 2.5rem;
-            margin-bottom: 6rem;
-            .input-ctrl-2{
-                flex-direction: column;
-                & :last-child{
-                    margin-left: 0;
-                    margin-top: 1.5rem;
-                }
-            }
-            
-        }
-        
-    }
-    .contact-item{
-        flex-direction: column;
-        margin: 1rem 0;
-        p{
-            font-size: 15px;
-            color: var(--color-grey-2);
-        }
-        span{
-            font-size: 15px;
-        }
-        // .icon{
-        //     grid-template-columns: 25px 1fr;
-        // }
-    }
-    
-    .main-title{
-        h1{
-            font-size: 3rem;
-            .bg-text{
-                font-size: 4rem;
-            }
-        }
-        
+    .header-content .right-header .name{
+        font-size: 2rem !important;
     }
 }
-
-
-@media screen and (max-width:660px) {
-    .blogs-grid{
-        grid-template-columns: repeat(1, 1fr) ;
-    }
-    .portfolios{
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    .main-title{
-        h1{
-            font-size: 2rem;
-            .bg-text{
-                font-size: 3rem;
-            }
-        }
-        
-    }
-    .about-container {
-        
-
-        .left-about {
-            padding-right: 0;
-            padding-left: 0;
-            h4{
-                font-size: 1.4rem;
-            }
-            p{
-                line-height: 1.4rem;
-            }
-
-        }
-    }
-    .contact-content-container{
-        .right-contact{
-            .submit-btn{
-                justify-content: center;
-            }
-        }
-        
-    }
-    .contact-icon{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-   
-}
-
-

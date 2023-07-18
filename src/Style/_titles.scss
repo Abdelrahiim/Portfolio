@@ -1,10 +1,10 @@
-.header{
-    overflow: scroll;
-}
+// .header{
+//     overflow: scroll;
+// }
 // Header-content
 .header-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,2fr);
 
     min-height: 100%;
 
@@ -54,7 +54,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+        padding-right: 10rem;
 
         .name {
             font-size: 3rem;

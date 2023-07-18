@@ -41,7 +41,8 @@ a {
 header {
     height: 100vh;
     color: var(--color-white);
-    overflow: hidden;
+    // overflow: hidden;
+    // margin-right: 1rem;
 }
 
 section {
@@ -50,7 +51,7 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem
+    padding: 3rem 10rem
 }
 
 

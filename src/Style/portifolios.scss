@@ -7,13 +7,13 @@
 
 .portfolios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 3rem;
     margin-top: 3rem;
 
     .portolio-item {
         position: relative;
-
+        
         .image{
             
             img {
